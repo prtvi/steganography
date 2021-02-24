@@ -25,10 +25,10 @@ w = dimensions(1);
 h = dimensions(2);
 
 % initializing the 2D matrices which will store the pixel values of the images
-% rf - red-foreground, rm - red-message, similarly for green and blue
-rf = zeros(w, h); rm = zeros(w, h);
-gf = zeros(w, h); gm = zeros(w, h);
-bf = zeros(w, h); bm = zeros(w, h);
+% fore_red - red-foreground, msg_red - red-message, similarly for green and blue
+fore_red = zeros(w, h); msg_red = zeros(w, h);
+fore_green = zeros(w, h); msg_green = zeros(w, h);
+fore_blue = zeros(w, h); msg_blue = zeros(w, h);
 
 % initilizing the matrix for the output image
 output = zeros(w, h, 3, 'uint8');
@@ -38,16 +38,16 @@ for i = 1:1:w
         % accessing each pixel from the original images, modifying them and substituting in output
         
         % for red
-        rf(i, j) = foreground(i, j, 1); rm(i, j) = message(i, j, 1);
-        output(i, j, 1) = (floor(rf(i, j)/divider)*divider) + floor(rm(i, j)/divider);
+        fore_red(i, j) = foreground(i, j, 1); msg_red(i, j) = message(i, j, 1);
+        output(i, j, 1) = (floor(fore_red(i, j)/divider)*divider) + floor(msg_red(i, j)/divider);
 
         % for green
-        gf(i, j) = foreground(i, j, 2); gm(i, j) = message(i, j, 2);
-        output(i, j, 2) = (floor(gf(i, j)/divider)*divider) + floor(gm(i, j)/divider);
+        fore_green(i, j) = foreground(i, j, 2); msg_green(i, j) = message(i, j, 2);
+        output(i, j, 2) = (floor(fore_green(i, j)/divider)*divider) + floor(msg_green(i, j)/divider);
         
         % for blue
-        bf(i, j) = foreground(i, j, 3); bm(i, j) = message(i, j, 3);
-        output(i, j, 3) = (floor(bf(i, j)/divider)*divider) + floor(bm(i, j)/divider);
+        fore_blue(i, j) = foreground(i, j, 3); msg_blue(i, j) = message(i, j, 3);
+        output(i, j, 3) = (floor(fore_blue(i, j)/divider)*divider) + floor(msg_blue(i, j)/divider);
         
     end
 end
