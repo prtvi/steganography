@@ -3,7 +3,7 @@
 ## Steganography
 It is the technique of hiding digital data such as audio/image/video within an ordinary, simple non-secret file such as audio/image/video.
 
-Get detailed explanation of Steganography [here](https://prithviie.github.io/html/projects/stegano.html).
+Get detailed explanation of Steganography in the repository's About tab.
 
 ## About the Project
 This is a simple implementation of Image Steganography using the **LSB** (Least Significant Bit) technique. Implemented using MATLAB. This project includes two implementations:
