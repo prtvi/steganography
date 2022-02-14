@@ -1,6 +1,6 @@
 # Steganography
 
-It is the technique of hiding digital data such as audio/image/video within an ordinary, simple, non-secret file such as audio/image/video in order to avoid detection.
+It is the technique of hiding digital data such as audio/image/video within an ordinary, simple, non-secret file such as audio/image/video in order to avoid detection. See [here](#output) for the result.
 
 ## About the Project
 
@@ -60,6 +60,6 @@ As you can see there is no much difference between the foreground image and outp
 - message image
 - output image
 
-<img src="Img-to-Img/images/foreground.png" width="30%" />
-<img src="Img-to-Img/images/message.png" width="30%" />
-<img src="Img-to-Img/images/output.png" width="30%" />
+<img src="Img-to-Img/images/foreground.png" width="30%" style="display: inline;"/>
+<img src="Img-to-Img/images/message.png" width="30%" style="display: inline;"/>
+<img src="Img-to-Img/images/output.png" width="30%" style="display: inline;"/>
