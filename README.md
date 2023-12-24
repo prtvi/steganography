@@ -63,3 +63,8 @@ As you can see there is no much difference between the foreground image and outp
 <img src="Img-to-Img/images/foreground.png" width="30%" style="display: inline;"/>
 <img src="Img-to-Img/images/message.png" width="30%" style="display: inline;"/>
 <img src="Img-to-Img/images/output.png" width="30%" style="display: inline;"/>
+
+## Other links
+
+Click [here](https://prtvi.github.io/allprojects.html) to check out my other projects
+
